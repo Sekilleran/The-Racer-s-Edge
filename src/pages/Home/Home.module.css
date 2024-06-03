@@ -1,0 +1,169 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url(/src/assets/fondoHome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title{
+    margin-top: 5%;
+}
+
+.content_text_landing_1{
+    background: transparent;
+    backdrop-filter: blur(13px);
+    display: flex;
+    position: relative;
+    width: 60%;
+    height: 352px;
+    margin-top: 8%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 200;
+    margin-left: 4%;
+}
+
+.content_text_landing_2{
+    background: transparent;
+    backdrop-filter: blur(13px);
+    display: flex;
+    position: relative;
+    width: 60%;
+    height: 352px;
+    margin-top: 8%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 200;
+    margin-left: 37%;
+}
+
+.content_text_landing_3{
+    background: transparent;
+    backdrop-filter: blur(13px);
+    display: flex;
+    position: relative;
+    width: 60%;
+    height: 352px;
+    margin-top: 8%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 200;
+    margin-left: 5%;
+}
+
+.content_text_landing_4{
+    background: transparent;
+    backdrop-filter: blur(13px);
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 140px;
+    margin-top: 8%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 0%;
+    font-weight: 200;
+}
+
+.nav_links{
+    width: 13%;
+    height: 60%;
+    overflow: hidden;
+    position: relative;
+    transition: 0.2s;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_links:hover{
+    color: white;
+    background-color: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px
+    #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;
+
+}
+
+.nav_links span{
+    position: absolute;
+    display: block;
+}
+
+.span1{
+    top: 0;
+    left: -207px;;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent, #a945c7);
+}
+
+.nav_links:hover .span1{
+    left: 100%;
+    transition: 1s;
+}
+
+.span3{
+    bottom: 0;
+    right: -202px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent, #a945c7);
+}
+
+.nav_links:hover .span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent, #a945c7);
+}
+
+.nav_links:hover .span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent, #a945c7);
+}
+
+.nav_links:hover .span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+.content_buttons{
+    width: 100%;
+    display: flex;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
