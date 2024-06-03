@@ -1,0 +1,130 @@
+.contentNav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    height: 12.65%;
+    z-index: 1;
+    border-bottom: 1px solid gray;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(18px);
+}
+
+li {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav_links{
+    width: 15%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    transition: 0.2s;
+    color: white;
+}
+.nav_links:hover{
+    color: white;
+    background-color: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px
+    #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;
+
+}
+
+.nav_links span{
+    position: absolute;
+    display: block;
+}
+
+.span1{
+    top: 0;
+    left: -207px;;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent, #a945c7);
+}
+
+.nav_links:hover .span1{
+    left: 100%;
+    transition: 1s;
+}
+
+.span3{
+    bottom: 0;
+    right: -202px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent, #a945c7);
+}
+
+.nav_links:hover .span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent, #a945c7);
+}
+
+.nav_links:hover .span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent, #a945c7);
+}
+
+.nav_links:hover .span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+.lineal_animation{
+    color: red;
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    margin-top: 5.6%;
+    left: -700px;
+    background: linear-gradient(70deg, transparent, #a945c7);
+    animation:linealAnimation 10s infinite;
+}
+
+@keyframes linealAnimation {
+    0%{
+        left: -700px;
+    }
+    100%{
+        left: 1800px;
+    }
+}
