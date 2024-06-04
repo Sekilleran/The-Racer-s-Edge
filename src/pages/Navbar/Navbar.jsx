@@ -1,6 +1,6 @@
 import styles from "./Navbar.module.css"
 import {Link, useNavigate} from "react-router-dom";
-import icono from "../../assets/Icono.svg"
+import icono from "../../assets/Icono.png"
 
 
 export default function Navbar () {
@@ -10,6 +10,10 @@ export default function Navbar () {
 
     return (
         <nav className={styles.contentNav}>
+            <a href="/" className={styles.content_img}>
+                <img src={icono} className={styles.logo_img} alt="icono The Racer's Edge" />
+
+            </a>
             <ul>
                     <Link className={styles.nav_links}  to="/street">
                         <span className={styles.span1}></span>
