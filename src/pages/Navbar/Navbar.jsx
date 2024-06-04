@@ -1,56 +1,60 @@
 import styles from "./Navbar.module.css"
-import {Link, useNavigate} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import icono from "../../assets/Icono.png"
 
 
-export default function Navbar () {
+export default function Navbar() {
     const navigate = useNavigate();
 
 
 
     return (
         <nav className={styles.contentNav}>
-            <a href="/" className={styles.content_img}>
+            {/* <a href="/" className={styles.content_img}>
                 <img src={icono} className={styles.logo_img} alt="icono The Racer's Edge" />
 
-            </a>
+            </a> */}
             <ul>
-                    <Link className={styles.nav_links}  to="/street">
-                        <span className={styles.span1}></span>
-                        <span className={styles.span2}></span>
-                        <span className={styles.span3}></span>
-                        <span className={styles.span4}></span>
-                <li>
-                         Street
-                </li>
-                    </Link>
-                    <Link className={styles.nav_links} to="/racing">
-                        <span className={styles.span1}></span>
-                        <span className={styles.span2}></span>
-                        <span className={styles.span3}></span>
-                        <span className={styles.span4}></span>
-                <li>
+                <a href="/">
+                    <h1 className={styles.titleNav}>THE RACERS EDGE</h1><br />
+                    <p className={styles.SubTitle}>High Performanc Auto Part</p>
+                </a>
+                <Link className={styles.nav_links} to="/street">
+                    <span className={styles.span1}></span>
+                    <span className={styles.span2}></span>
+                    <span className={styles.span3}></span>
+                    <span className={styles.span4}></span>
+                    <li>
+                        Street
+                    </li>
+                </Link>
+                <Link className={styles.nav_links} to="/racing">
+                    <span className={styles.span1}></span>
+                    <span className={styles.span2}></span>
+                    <span className={styles.span3}></span>
+                    <span className={styles.span4}></span>
+                    <li>
                         Racing
-                </li>
-                    </Link>    
-                    <Link className={styles.nav_links} to="sport">
-                        <span className={styles.span1}></span>
-                        <span className={styles.span2}></span>
-                        <span className={styles.span3}></span>
-                        <span className={styles.span4}></span>
-                <li>
+                    </li>
+                </Link>
+                <Link className={styles.nav_links} to="sport">
+                    <span className={styles.span1}></span>
+                    <span className={styles.span2}></span>
+                    <span className={styles.span3}></span>
+                    <span className={styles.span4}></span>
+                    <li>
                         Sport
-                </li>
-                    </Link>
-                    <Link className={styles.nav_links} to="contact">
-                        <span className={styles.span1}></span>
-                        <span className={styles.span2}></span>
-                        <span className={styles.span3}></span>
-                        <span className={styles.span4}></span>
-                <li>
+                    </li>
+                </Link>
+                <Link className={styles.nav_links} to="contact">
+                    <span className={styles.span1}></span>
+                    <span className={styles.span2}></span>
+                    <span className={styles.span3}></span>
+                    <span className={styles.span4}></span>
+                    <li>
                         Contact
-                </li>
-                    </Link>
+                    </li>
+                </Link>
             </ul>
             <span className={styles.lineal_animation}></span>
         </nav>
